@@ -9,13 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="sticky-header">
         <nav class="container">
-            <!-- ✅ Logo image added -->
-            <div class="logo">
-                <img src="images/logo.jpg" alt="Anatolia Kebabs Logo" class="logo-img">
-                ANATOLIA KEBABS
-            </div>
+            <div class="logo">ANATOLIA KEBABS</div>
             <ul class="nav-links">
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#location">Location</a></li>
@@ -31,11 +28,6 @@
             <p>Freshly prepared Kebabs, Gözleme, and our signature Pulao Rice Boxes.</p>
             <a href="#menu" class="btn-primary">View Our Menu</a>
         </div>
-    </section>
-
-    <!-- ✅ Menu picture added after hero -->
-    <section class="menu-banner container">
-        <img src="images/menu.jpg" alt="Full Menu" class="menu-full-img">
     </section>
 
     <section id="menu" class="container">
@@ -73,14 +65,10 @@
         <div class="container info-grid">
             <div class="hours">
                 <h3>Opening Hours</h3>
-                <!-- ✅ Each day has class for auto bold -->
-                <p class="day" data-day="1">Monday: 9am - 6pm</p>
-                <p class="day" data-day="2">Tuesday: 9am - 6pm</p>
-                <p class="day" data-day="3">Wednesday: 9am - 6pm</p>
-                <p class="day" data-day="4">Thursday: 9am - 9pm</p>
-                <p class="day" data-day="5">Friday: 9am - 6pm</p>
-                <p class="day" data-day="6">Saturday: 9am - 6pm</p>
-                <p class="day" data-day="0">Sunday: 11am - 6pm</p>
+                <p>Mon - Wed: 9am - 6pm</p>
+                <p><strong>Thursday: 9am - 9pm</strong></p>
+                <p>Fri - Sat: 9am - 6pm</p>
+                <p>Sunday: 11am - 6pm</p>
             </div>
             <div class="contact">
                 <h3>Visit Us</h3>
@@ -95,14 +83,5 @@
         <p>&copy; 2024 Anatolia Kebabs | <a href="http://anatolyakebabs.com.au" style="color: white; text-decoration: none;">anatolyakebabs.com.au</a></p>
     </footer>
 
-    <!-- ✅ JavaScript: Auto bold TODAY'S day only -->
-    <script>
-        const today = new Date().getDay(); // 0=Sun,1=Mon,...,6=Sat
-        document.querySelectorAll('.day').forEach(el => {
-            if (parseInt(el.dataset.day) === today) {
-                el.innerHTML = `<strong>${el.textContent}</strong>`;
-            }
-        });
-    </script>
 </body>
 </html>
