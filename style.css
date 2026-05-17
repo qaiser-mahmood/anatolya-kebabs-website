@@ -1167,12 +1167,12 @@ body {
   .heritage-title .line-two {
     display: block;
     white-space: nowrap;          
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: -0.5px;
   }
 
   .heritage-title .line-one { font-size: 7.2vw; }
-  .heritage-title .line-two { font-size: 6.1vw; color: #fee2e2; }
+  .heritage-title .line-two { font-size: 6.0vw; color: #fee2e2; }
 
   .about-text {
     font-size: 15px;
@@ -1244,6 +1244,6 @@ body {
 @media (max-width: 480px) {
   .brand-sign-title .sign-line-top { font-size: 2.1rem; }
   .brand-sign-title .sign-line-bottom { font-size: 2.3rem; }
-  .heritage-title .line-one, .heritage-title .line-two { font-size: 34px; }
+  .heritage-title .line-one, .heritage-title .line-two { font-size: 30px; }
   .hours-row { padding: 10px 14px; font-size: 13px; }
 }
