@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anatolya Kebabs | Menu Flyer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #0f172a;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+    .back-btn {
+      background: #dc2626;
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: all 0.2s ease;
+    }
+    .back-btn:hover {
+      background: #b91c1c;
+      transform: scale(1.02);
+    }
+    .flyer-container {
+      margin-top: 80px; 
+      padding: 20px;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .flyer-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      animation: zoomIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .desktop-flyer { display: block; }
+    .mobile-flyer { display: none; }
+
+    @media (max-width: 768px) {
+      .desktop-flyer { display: none; }
+      .mobile-flyer { display: block; }
+      .top-bar { padding: 10px; }
+      .back-btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="index.html#menu" class="back-btn">⬅️ Back to Website</a>
+  </div>
+
+  <div class="flyer-container">
+    <img src="images/menu-landscape.jpg" alt="Anatolya Kebabs Menu" class="flyer-img desktop-flyer">
+    <img src="images/menu-portrait.jpg" alt="Anatolya Kebabs Menu" class="flyer-img mobile-flyer">
+  </div>
+
+</body>
+</html>

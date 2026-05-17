@@ -4,150 +4,485 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Anatolya Kebabs | Turkish Kebabs, HSP & Gozleme in Innaloo</title>
-  <meta name="description" content="Fresh Turkish kebabs, HSP, rice boxes and gozleme in Innaloo. Order online or visit us today." />
+  <title>Anatolya Kebabs Innaloo | Turkish Kebabs, Meatboxes & Gozleme</title>
+  <meta name="description" content="Enjoy fresh Turkish kebabs, premium meatboxes, rice boxes, and handmade gozleme at Westfield Innaloo Food Court. Open daily. Call or WhatsApp +61 405 477 864 to order!" />
+  <meta name="keywords" content="Anatolya Kebabs, Kebabs Innaloo, Westfield Innaloo Food Court, Meatbox Innaloo, HSP Innaloo, Turkish Food Innaloo" />
+  <meta name="robots" content="index, follow" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anatolya Kebabs Innaloo | Fresh Turkish Street Food" />
+  <meta property="og:description" content="Authentic kebabs, crispy meatboxes, and fresh handmade gozleme made daily to order at Westfield Innaloo." />
+  <meta property="og:image" content="images/logo.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700;800&family=Oswald:wght=700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
-</head>
+  
+  <script src="config.js" defer></script>
+  <script src="reviews.js"></script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FastFoodRestaurant",
+    "name": "Anatolya Kebabs Innaloo",
+    "image": "images/logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 1013, 388 Scarborough Beach Rd",
+      "addressLocality": "Innaloo",
+      "addressRegion": "WA",
+      "postalCode": "6018",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -31.8994511,
+      "longitude": 115.8013143
+    },
+    "telephone": "+61405477864",
+    "menu": "menu.html",
+    "servesCuisine": ["Turkish", "Kebabs", "Halal"]
+  }
+  </script>
+</head>
 <body>
 
-  <!-- HEADER -->
   <header class="header">
-    <div class="logo">Anatolya Kebabs</div>
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="Anatolya Kebabs Logo" class="site-logo" />
+      <span class="logo-text">Anatolya<span>Kebabs</span></span>
+    </div>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main Navigation">
       <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <a class="order-btn" href="https://www.ubereats.com" target="_blank">
-      Order Now
+      <a href="#about">About Us</a>
+      <a href="#contact">Opening Hours</a>
+      <a href="https://wa.me/61405477864" target="_blank" rel="noopener" class="nav-whatsapp">
+        <svg class="whatsapp-icon-nav" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.292 1.48 4.961 1.481 5.428 0 9.849-4.414 9.853-9.84.002-2.63-1.023-5.101-2.885-6.965C16.713 1.966 14.24 .942 11.61.942c-5.433 0-9.854 4.415-9.857 9.84-.001 1.748.475 3.42 1.378 4.886l-.996 3.639 3.731-.978L6.647 19.15zM17.486 14.4c-.3-.149-1.772-.874-2.046-.973-.274-.1-.474-.149-.674.15-.2.299-.774.973-.949 1.173-.175.199-.349.224-.649.075-.3-.149-1.266-.467-2.41-1.485-.89-.793-1.491-1.773-1.666-2.072-.175-.3-.019-.461.13-.61l.449-.523c.15-.174.2-.299.3-.499.1-.2.05-.374-.025-.524-.075-.15-.674-1.622-.924-2.221-.244-.587-.492-.508-.674-.517-.175-.008-.375-.01-.574-.01s-.524.075-.798.374c-.274.3-1.048 1.023-1.048 2.494 0 1.471 1.073 2.892 1.223 3.092.15.2 2.113 3.227 5.119 4.524.715.309 1.273.493 1.708.631.719.228 1.373.196 1.891.118.577-.087 1.772-.724 2.022-1.422.249-.697.249-1.295.174-1.422-.075-.127-.274-.201-.574-.351z"/>
+      </svg>
+      Chat
     </a>
-  </header>
+  </nav>
 
+  <a class="order-btn" href="https://www.ubereats.com" target="_blank" rel="noopener" aria-label="Order on Uber Eats Website">
+    Order on Uber Eats
+  </a>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Fresh Turkish Kebabs & HSP</h1>
-      <p>Kebabs, HSP, Rice Boxes & Gozleme made fresh daily</p>
-
-      <div class="hero-actions">
-        <a class="primary-btn" href="https://www.ubereats.com" target="_blank">
-          Order on Uber Eats
-        </a>
-        <a class="secondary-btn" id="menuBtn" href="images/menu.jpg" target="_blank">
-          View Menu
-        </a>
-      </div>
-
-      <div class="hero-info">
-        <span>📍 Westfield Innaloo</span>
-        <span>🕒 Open Daily</span>
-      </div>
-    </div>
-
-    <div class="hero-image">
-      <img src="images/hero-bg.jpg" alt="Kebabs and HSP" />
-    </div>
-  </section>
-
-
-  <!-- BEST SELLERS -->
-  <section class="section">
-    <h2>Most Popular</h2>
-
-    <div class="cards">
-      <div class="card">
-        <img src="images/kebabs.jpg" alt="Kebab" />
-        <h3>Kebabs</h3>
-      </div>
-
-      <div class="card">
-        <img src="images/salad-meat-box.jpg" alt="HSP" />
-        <h3>HSP</h3>
-      </div>
-
-      <div class="card">
-        <img src="images/rice-box.jpg" alt="Rice Box" />
-        <h3>Rice Boxes</h3>
-      </div>
-
-      <div class="card">
-        <img src="images/gozleme.jpg" alt="Gozleme" />
-        <h3>Gozleme</h3>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- MENU -->
-  <section id="menu" class="section dark">
-    <h2>Menu</h2>
-
-    <div class="menu-grid">
-      <div>
-        <h3>Kebabs</h3>
-        <p>Chicken, Lamb, Mixed</p>
-      </div>
-
-      <div>
-        <h3>HSP</h3>
-        <p>Meat, chips, sauces</p>
-      </div>
-
-      <div>
-        <h3>Rice Boxes</h3>
-        <p>Chicken or lamb with rice</p>
-      </div>
-
-      <div>
-        <h3>Gozleme</h3>
-        <p>Spinach, cheese, meat</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>
-      Anatolya Kebabs is a family-run Turkish takeaway in Innaloo serving fresh grilled kebabs,
-      HSP, rice boxes and handmade gozleme daily.
-    </p>
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="section dark">
-    <h2>Visit Us</h2>
-
-    <p>📍 Westfield Innaloo, WA</p>
-    <p>📞 Call us for pickup orders</p>
-  </section>
-
-
-  <!-- MOBILE BOTTOM BAR -->
-  <div class="mobile-bar">
-    <a href="https://www.ubereats.com" target="_blank">Order Uber Eats</a>
-    <a href="tel:+61405477864">Call Now</a>
+  <div class="mobile-sub-nav">
+    <a href="#menu">📋 View Menu</a>
+    <a href="#about">✨ About Us</a>
+    <a href="#contact">🕒 Opening Hours</a>
   </div>
+
+  <main>
+    <section class="hero" aria-label="Welcome Banner">
+      <div class="hero-content">
+        <div class="hero-badge animate-pulse-glow">⭐ Highly Rated By Innaloo Locals</div>
+        
+        <h1 class="brand-sign-title">
+          <span class="sign-line-top">Kebabs, Meat</span>
+          <span class="sign-line-bottom">& Rice Boxes</span>
+        </h1>
+        
+        <p>Fresh daily at the <strong>Westfield Innaloo Food Court</strong>. Premium shaved meats and handmade crispy flatbreads cooked straight to order.</p>
+      </div>
+
+      <div class="hero-reviews-panel">
+        <div class="reviews-title-bar">
+          <div class="brand-rating">
+            <span class="google-logo">Google Reviews</span> 
+            <span class="rating-summary" id="dynamic-header-rating">...</span>
+          </div>
+          <div class="scroll-indicators" aria-hidden="true">
+            <button class="scroll-arrow prev-btn" onclick="scrollReviews(-1)">←</button>
+            <button class="scroll-arrow next-btn" onclick="scrollReviews(1)">→</button>
+          </div>
+        </div>
+        
+        <div id="hero-review-slider" class="reviews-horizontal-slider"></div>
+
+        <div class="reviews-footer-bar">
+          <a href="https://search.google.com/local/reviews?placeid=ChIJidBOfGukMioRu8w9XzMhZpU" target="_blank" rel="noopener" class="reviews-action-link">
+            💬 Read More Customer Reviews
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-header">
+        <span class="sub-title animate-wave-flow">Customer Favorites</span>
+        <h2>Most Popular Dishes</h2>
+      </div>
+
+      <div class="cards">
+        <a href="#item-kebabs" class="card-anchor" onclick="highlightPopularItem('item-kebabs')">
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="images/kebabs.jpg" alt="Selection of fresh toasted Turkish Kebabs" />
+            </div>
+            <h3>Traditional Kebabs</h3>
+            <p>Lamb, Chicken, or Mixed meats wrapped with crisp salad and house sauces.</p>
+          </article>
+        </a>
+
+        <a href="#item-meatboxes" class="card-anchor" onclick="highlightPopularItem('item-meatboxes')">
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="images/meat-box.jpg" alt="Anatolya Meatbox with chips and layers of sauce" />
+            </div>
+            <h3>Signature Meatboxes</h3>
+            <p>Your choice of dynamic shaved meats layered over a bed of golden hot chips.</p>
+          </article>
+        </a>
+
+        <a href="#item-riceboxes" class="card-anchor" onclick="highlightPopularItem('item-riceboxes')">
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="images/rice-box.jpg" alt="Healthy Turkish Rice Box option" />
+            </div>
+            <h3>Healthy Rice Boxes</h3>
+            <p>Aromatic seasoned Turkish rice topped with grilled protein or fresh salads.</p>
+          </article>
+        </a>
+
+        <a href="#item-gozleme" class="card-anchor" onclick="highlightPopularItem('item-gozleme')">
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="images/gozleme.jpg" alt="Authentic handmade Turkish Gozleme cut into slices" />
+            </div>
+            <h3>Handmade Gozleme</h3>
+            <p>Traditional savory flatbreads griddled crisp and stuffed with premium fillings.</p>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <section id="menu" class="section dark">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-title animate-wave-flow">Delicious Variety</span>
+          <h2>Explore Our Menu</h2>
+          
+          <div class="menu-downloads">
+            <a href="menu.html" class="flyer-btn desktop-flyer-btn">📋 View Menu Flyer</a>
+            <a href="menu.html" class="flyer-btn mobile-flyer-btn">📋 View Menu Flyer</a>
+          </div>
+        </div>
+
+        <div class="menu-visual-grid">
+          
+          <div id="item-kebabs" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/kebabs.jpg" alt="Premium Lamb Kebab">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Lamb Kebab <small>(14% Beef)</small></h3>
+                <span class="menu-price" id="price-lambKebab">$17.00</span>
+              </div>
+              <p>Served with fresh Lettuce, Tomato & Onion and your choice of 2 house sauces.</p>
+            </div>
+          </div>
+
+          <div id="item-falafel" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/falafel-kebab.jpg" alt="Vegetarian Falafel Kebab wrap">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Falafel Kebab</h3>
+                <span class="menu-price" id="price-falafelKebab">$15.50</span>
+              </div>
+              <p>Authentic crispy falafel balls paired nicely with fresh hummus, tabouli, and salad.</p>
+            </div>
+          </div>
+
+          <div id="item-vegetarian" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/vegetarian-kebab.jpg" alt="Fresh Vegetarian Kebab">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Vegetarian Kebab</h3>
+                <span class="menu-price" id="price-vegetarianKebab">$14.00</span>
+              </div>
+              <p>Packed tight with premium crisp seasonal salads, house-made tabouli, and savory sauces.</p>
+            </div>
+          </div>
+
+          <div id="item-meatboxes" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/meat-box.jpg" alt="Premium Turkish Meatbox with chips">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Meatbox <small>(with Chips)</small></h3>
+                <span class="menu-price" id="price-meatboxStarting">From $15.00</span>
+              </div>
+              <p>Shaved chicken or lamb over hot chips. Small <strong id="price-meatboxSmall">$15</strong> | Large <strong id="price-meatboxLarge">$18</strong> | Combo <strong id="price-meatboxCombo">$19</strong>.</p>
+            </div>
+          </div>
+
+          <div id="item-saladbox" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/salad-meat-box.jpg" alt="Salad Meat Box combo">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Salad Meat Box</h3>
+                <span class="menu-price" id="price-saladMeatBox">$17.00</span>
+              </div>
+              <p>A smart low-carb blend of premium meats alongside crisp lettuce, tomato, onion, and tabouli.</p>
+            </div>
+          </div>
+
+          <div id="item-riceboxes" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/rice-box.jpg" alt="Meat Rice Box with white sauce">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Signature Rice Box <span class="new-tag animate-shimmer-tag">NEW</span></h3>
+                <span class="menu-price" id="price-riceBoxStarting">From $15.00</span>
+              </div>
+              <p>Fluffy seasoned Turkish rice with choice of protein. Meat Box <strong id="price-riceBoxMeat">$17</strong> | Salad Box <strong id="price-riceBoxSalad">$15</strong>.</p>
+            </div>
+          </div>
+
+          <div id="item-saladchips" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/salad-chips-box.jpg" alt="Salad Box served with Hot Chips">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Salad Box with Chips</h3>
+                <span class="menu-price" id="price-saladChipsBox">$10.00</span>
+              </div>
+              <p>Crispy golden chips topped off with fresh green leaf salad variants and drizzled sauce toppings.</p>
+            </div>
+          </div>
+
+          <div id="item-gozleme" tabindex="0" class="menu-card">
+            <div class="menu-card-img">
+              <img src="images/gozleme.jpg" alt="Handmade Vegetarian Gozleme flatbread">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-title">
+                <h3>Vegetarian Gozleme</h3>
+                <span class="menu-price" id="price-vegetarianGozleme">$16.00</span>
+              </div>
+              <p>Authentic grilled pastry stuffed perfectly with rich Feta Cheese, Spinach & Leek.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="add-ons-grid">
+          <div class="addon-box">
+            <h3>🍟 Sides & Extras</h3>
+            <ul class="addon-list">
+              <li>Hot Chips <span>Sml <span id="price-chipsSmall">$7.50</span> | Lrg <span id="price-chipsLarge">$9.50</span></span></li>
+              <li>Add Rich Gravy <span id="price-gravyAddon">+$2.50</span></li>
+              <li>Double Meat Add-on <span id="price-doubleMeat">+$4.00</span></li>
+              <li>THE LOT <small>(Cheese & Egg)</small> <span id="price-theLot">+$4.00</span></li>
+              <li>Gourmet Fillings <small>(Fetta/Olives)</small> <span id="price-gourmetFilling">$2.00 ea</span></li>
+            </ul>
+          </div>
+
+          <div class="addon-box sauces-box">
+            <h3>🥫 House Sauces</h3>
+            <p class="sauce-note">Pick 2 for your wraps or boxes:</p>
+            <div class="sauce-tags">
+              <span>Hot Chilli</span><span>Sweet Chilli</span><span>Garlic</span>
+              <span>Sour Cream</span><span>Tomato</span><span>BBQ</span>
+              <span>Mayonnaise</span><span>Satay</span><span>Hummus</span>
+            </div>
+          </div>
+
+          <div class="addon-box promo-box">
+            <div class="water-deal">
+              <span class="deal-badge">DRINK OFFER</span>
+              <p>Add a 600ml bottle of cold water to any meal for just <strong id="price-waterOffer">$3.00</strong>!</p>
+            </div>
+            <div class="combo-deal">
+              <span class="deal-badge gold-badge">COMBO DEAL</span>
+              <p>Make it a combo meal! Add chips + a drink can for only <strong id="price-comboMealDeal">+$10.00</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="about-wrapper">
+        <div class="about-content">
+          <span class="sub-title">Our Heritage</span>
+          
+          <h2 class="heritage-title">
+            <span class="line-one">Proudly Serving</span>
+            <span class="line-two">Innaloo Better Every Day</span>
+          </h2>
+          
+          <p class="about-text">
+            At Anatolya Kebabs, we pull no shortcuts. Located inside the vibrant Westfield Innaloo shopping community, we serve real, wholesome Turkish street food recipes. From perfectly seasoned vertical meats to crisp salad combinations, our family takes ultimate pride in every single order.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section dark">
+      <div class="container contact-section-grid">
+        
+        <div class="contact-info-panel">
+          <span class="sub-title animate-wave-flow">Location & Hours</span>
+          <h2>Visit Us Today</h2>
+          
+          <div class="contact-details">
+            <p class="contact-item">🏬 <strong>Location:</strong> Food court Westfield Innaloo</p>
+            <p class="contact-item">📍 <strong>Street Address:</strong> Shop 1013, 388 Scarborough Beach Rd, Innaloo, 6018, WA</p>
+            
+            <div class="hours-block">
+              <p class="contact-item">🕒 <strong>Trading Hours:</strong></p>
+              <ul class="hours-list">
+                <li><span>Monday - Wednesday:</span> <span id="hours-monWedFri">10:00 AM - 6:00 PM</span></li>
+                <li><span>Thursday:</span> <span id="hours-thursday">10:00 AM - 9:00 PM</span></li>
+                <li><span>Friday:</span> <span id="hours-monWedFri">10:00 AM - 6:00 PM</span></li>
+                <li><span>Saturday:</span> <span id="hours-saturday">10:00 AM - 6:00 PM</span></li>
+                <li><span>Sunday:</span> <span id="hours-sunday">11:00 AM - 6:00 PM</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="maps-btn-container">
+            <a href="https://maps.google.com/?q=Anatolya+Fine+Turkish+Westfield+Innaloo" 
+               target="_blank" 
+               rel="noopener" 
+               class="maps-btn">
+               🗺️ Open in Google Maps App
+            </a>
+          </div>
+        </div>
+        <div class="map-wrapper">
+          <iframe 
+            src="https://maps.google.com/maps?q=Anatolya%20Kebabs%20Westfield%20Innaloo&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Anatolya Kebabs Westfield Innaloo Map Location">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-bar" role="commands">
+    <a class="mobile-action mobile-whatsapp" href="https://wa.me/61405477864" target="_blank" rel="noopener">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.292 1.48 4.961 1.481 5.428 0 9.849-4.414 9.853-9.84.002-2.63-1.023-5.101-2.885-6.965C16.713 1.966 14.24 .942 11.61.942c-5.433 0-9.854 4.415-9.857 9.84-.001 1.748.475 3.42 1.378 4.886l-.996 3.639 3.731-.978L6.647 19.15zM17.486 14.4c-.3-.149-1.772-.874-2.046-.973-.274-.1-.474-.149-.674.15-.2.299-.774.973-.949 1.173-.175.199-.349.224-.649.075-.3-.149-1.266-.467-2.41-1.485-.89-.793-1.491-1.773-1.666-2.072-.175-.3-.019-.461.13-.61l.449-.523c.15-.174.2-.299.3-.499.1-.2.05-.374-.025-.524-.075-.15-.674-1.622-.924-2.221-.244-.587-.492-.508-.674-.517-.175-.008-.375-.01-.574-.01s-.524.075-.798.374c-.274.3-1.048 1.023-1.048 2.494 0 1.471 1.073 2.892 1.223 3.092.15.2 2.113 3.227 5.119 4.524.715.309 1.273.493 1.708.631.719.228 1.373.196 1.891.118.577-.087 1.772-.724 2.022-1.422.249-.697.249-1.295.174-1.422-.075-.127-.274-.201-.574-.351z"/>
+      </svg>
+      Chat
+    </a>
+    <a class="mobile-action mobile-primary" href="https://www.ubereats.com" target="_blank" rel="noopener">Order on Uber Eats</a>
+    <a class="mobile-action mobile-secondary" href="tel:+61405477864">📞 Call Shop</a>
+  </div>
+
   <script>
-    // ✅ SMART MENU SWITCH CODE
-        const menuBtn = document.getElementById('menuBtn');
-        function setMenuImage() {
-            if (window.innerWidth < 768) {
-                menuBtn.href = "images/menu-portrait.jpg"; // Mobile vertical menu
-            } else {
-                menuBtn.href = "images/menu.jpg"; // Desktop horizontal menu
-            }
+    // 1. Handles clicks directly on Menu Grid Cards
+    document.querySelectorAll('.menu-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        document.querySelectorAll('.menu-card').forEach(c => c.classList.remove('is-active'));
+        if(window.location.hash) {
+          history.replaceState(null, null, ' ');
         }
-        // Run on load & when screen resizes
-        setMenuImage();
-        window.addEventListener('resize', setMenuImage);
+        this.classList.add('is-active');
+      });
+    });
+
+    // 2. Handles incoming clicks from the Popular Item shortcut anchors
+    function highlightPopularItem(itemId) {
+      setTimeout(() => {
+        document.querySelectorAll('.menu-card').forEach(c => c.classList.remove('is-active'));
+        const targetCard = document.getElementById(itemId);
+        if (targetCard) {
+          targetCard.classList.add('is-active');
+          targetCard.focus();
+        }
+      }, 50);
+    }
+
+    // 3. Automatically wipes highlight when clicking any link inside the Nav Headers
+    document.querySelectorAll('.nav a, .mobile-sub-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.menu-card').forEach(c => c.classList.remove('is-active'));
+      });
+    });
+
+    // 4. Connects straight with global reviews array
+    window.addEventListener('DOMContentLoaded', () => {
+      const sliderContainer = document.getElementById('hero-review-slider');
+      const staticRatingHeader = document.getElementById('dynamic-header-rating');
+      
+      const globalData = window.customerReviewsData;
+      
+      if (!globalData) {
+        console.error("Could not link global variables inside reviews.js!");
+        if(sliderContainer) sliderContainer.innerHTML = "<p style='color:white;padding:20px;'>Reviews initialization complete but missing arrays.</p>";
+        return;
+      }
+
+      // Populate summary badge indicators
+      const avgScore = globalData.averageRating || "4.8";
+      const totalStars = globalData.starDisplay || "★★★★★";
+      if (staticRatingHeader) {
+        staticRatingHeader.innerHTML = `<strong>${avgScore}</strong> ${totalStars}`;
+      }
+        
+      // Extract data maps dynamically
+      const reviewsList = globalData.reviews || [];
+      let htmlContent = '';
+      
+      reviewsList.forEach(rev => {
+        let starString = "★★★★★";
+        if (typeof rev.rating !== 'undefined') {
+          const numericStars = Math.round(Number(rev.rating));
+          starString = "★".repeat(numericStars) + "☆".repeat(5 - numericStars);
+        }
+
+        htmlContent += `
+          <div class="review-reading-card">
+            <div class="card-stars">${starString}</div>
+            <p class="card-quote">"${rev.text || ''}"</p>
+            <div class="card-reviewer">- ${rev.author || 'Anonymous'}</div>
+          </div>
+        `;
+      });
+
+      if (sliderContainer) {
+        sliderContainer.innerHTML = htmlContent || "<p style='color:white;padding:20px;'>No reviews setup.</p>";
+      }
+    });
+
+    function scrollReviews(direction) {
+      const slider = document.getElementById('hero-review-slider');
+      if (slider) {
+        const scrollAmount = 310; 
+        slider.scrollBy({
+          left: direction * scrollAmount,
+          behavior: 'smooth'
+        });
+      }
+    }
   </script>
 
 </body>
